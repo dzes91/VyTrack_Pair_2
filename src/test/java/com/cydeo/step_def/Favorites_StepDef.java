@@ -32,11 +32,14 @@ public class Favorites_StepDef {
         Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(vyTrackElementsPage.fleetBtn).perform();
 
+        vyTrackElementsPage.vehicleOption.click();
+
 
 
     }
     @And("user clicks on the star button")
     public void user_clicks_on_the_star_button() {
+        vyTrackElementsPage.vehiclePageStarBtn.click();
     }
     @Then("user should see the page under Favorites module")
     public void user_should_see_the_page_under_favorites_module() {
