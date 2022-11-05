@@ -11,13 +11,13 @@ public class WebTableLoginPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(name="username")
+    @FindBy(id = "prependedInput")
     public WebElement inputUsername;
 
-    @FindBy(name="password")
+    @FindBy(id = "prependedInput2")
     public WebElement inputPassword;
 
-    @FindBy(xpath="//button[@type='submit']")
+    @FindBy(id = "_submit")
     public WebElement loginButton;
 
 
