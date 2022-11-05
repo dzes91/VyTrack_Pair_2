@@ -14,6 +14,9 @@ public class VyTrackElementsPage {
     @FindBy(xpath = "//*[@id=\"main-menu\"]/ul/li[1]/a/span")
     public WebElement fleetBtn;
 
+    @FindBy(xpath = "//*[@id=\"main-menu\"]/ul/li[1]/div/div/ul/li[3]/a/span")
+    public WebElement vehicleOption;
+
     @FindBy(xpath = "//i[@class='fa-star hide-text']")
     public WebElement vehiclePageStarBtn;
 

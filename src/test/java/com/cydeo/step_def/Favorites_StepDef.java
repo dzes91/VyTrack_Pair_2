@@ -9,8 +9,10 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+import javax.swing.*;
 import java.util.List;
 
 public class Favorites_StepDef {
@@ -27,6 +29,10 @@ public class Favorites_StepDef {
 
     @When("user clicks on the Fleet dropdown")
     public void userClicksOnTheFleetDropdown() {
+        Actions actions = new Actions(Driver.getDriver());
+        actions.moveToElement(vyTrackElementsPage.fleetBtn).perform();
+
+
 
     }
     @And("user clicks on the star button")
